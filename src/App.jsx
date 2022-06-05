@@ -19,6 +19,7 @@ function App() {
   return (
     <>
       <div className="flex flex-col w-full h-screen items-center sm:justify-center p-4">
+        <h1 className="mb-4 text-2xl text-center font-medium">Confira a Previsão do Tempo em sua Cidade</h1>
         <form onSubmit={handleSubmit} className="fixed bottom-0 w-full flex p-4 sm:relative justify-center">
           <input 
             type="text" 
@@ -29,7 +30,7 @@ function App() {
           />
           <button 
             type="Submit"
-            className="bg-blue-600 p-3 rounded-lg ml-3 text-white font-bold"
+            className="bg-blue-600 p-3 rounded-lg ml-3 text-white font-bold hover:bg-blue-400 transition-[400ms] ease-in"
           >
             Pesquisar
           </button>
