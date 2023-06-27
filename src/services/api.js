@@ -1,4 +1,4 @@
-const KEY = 'e7845f24c93c4e8492a140647232504'
+const KEY = process.env.WEATHER_KEY
 
 const fetchData = async (city) => {
     const url = `https://api.weatherapi.com/v1/current.json?key=${KEY}&q=${city}&aqi=no&lang=pt`
